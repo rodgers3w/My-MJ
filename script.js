@@ -9,6 +9,14 @@ const backButton = document.getElementById("backButton");
 openButton.addEventListener("click", () => {
     openingScreen.classList.add("hidden");
     letterScreen.classList.remove("hidden");
+    const music = document.getElementById("backgroundMusic");
+const musicButton = document.getElementById("musicButton");
+
+music.play().then(() => {
+    musicButton.style.display = "block";
+}).catch(() => {
+    musicButton.style.display = "block";
+});
 
     window.scrollTo({
         top: 0,
