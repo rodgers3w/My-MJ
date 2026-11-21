@@ -56,3 +56,12 @@ function createHeart() {
 }
 
 setInterval(createHeart, 700);
+musicButton.addEventListener("click", () => {
+    if (music.paused) {
+        music.play();
+        musicButton.innerHTML = "♫ Pausar música";
+    } else {
+        music.pause();
+        musicButton.innerHTML = "♫ Tocar música";
+    }
+});
