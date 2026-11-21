@@ -372,3 +372,118 @@ h2 {
         font-size: 13px;
     }
 }
+/* GALERIA DE FOTOS DA GIOVANNA */
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin: 30px 0;
+}
+
+.photo-frame {
+    position: relative;
+    min-width: 0;
+    padding: 9px 9px 15px;
+    background: #f8d8e9;
+    border: 2px solid #ff9bcf;
+    border-radius: 13px;
+    box-shadow: 0 0 22px #ff75b844;
+    transform: rotate(-2deg);
+    animation: photoGlow 3s ease-in-out infinite;
+}
+
+.photo-frame:nth-child(2) {
+    transform: rotate(2deg);
+    animation-delay: 1s;
+}
+
+.photo-frame img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px;
+    background: #241421;
+}
+
+.photo-frame p {
+    color: #9d376d;
+    font-family: 'Pacifico', cursive;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.photo-heart {
+    position: absolute;
+    color: #ff4fa5;
+    font-size: 25px;
+    z-index: 3;
+    text-shadow: 0 0 10px #ff75b8;
+    animation: heartBeat 1.5s ease-in-out infinite;
+}
+
+.heart-one {
+    top: -17px;
+    left: -13px;
+}
+
+.heart-two {
+    bottom: 35px;
+    right: -13px;
+    animation-delay: .4s;
+}
+
+.heart-three {
+    top: -17px;
+    right: -13px;
+    animation-delay: .7s;
+}
+
+.heart-four {
+    bottom: 35px;
+    left: -13px;
+    animation-delay: .2s;
+}
+
+@keyframes heartBeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+}
+
+@keyframes photoGlow {
+    0%, 100% {
+        box-shadow: 0 0 15px #ff75b833;
+    }
+
+    50% {
+        box-shadow: 0 0 28px #ff75b877;
+    }
+}
+
+/* AJUSTE PARA CELULARES */
+
+@media (max-width: 380px) {
+    .photo-gallery {
+        gap: 13px;
+    }
+
+    .photo-frame {
+        padding: 6px 6px 12px;
+    }
+
+    .photo-frame img {
+        height: 165px;
+    }
+
+    .photo-frame p {
+        font-size: 10px;
+    }
+}
