@@ -1,0 +1,374 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top, #291326 0%, transparent 45%),
+        #0b080d;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.opening-screen {
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+    animation: appear 1s ease;
+}
+
+.small-text {
+    color: #e7a4c7;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #ff9bcf;
+    font-size: 38px;
+    margin: 12px 0;
+}
+
+.description {
+    color: #c9b8c6;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.open-button {
+    border: 1px solid #ff9bcf;
+    background: linear-gradient(135deg, #f47db9, #c84e91);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 25px #f47db944;
+    transition: 0.3s;
+}
+
+.open-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 35px #f47db977;
+}
+
+.open-button span {
+    margin: 0 7px;
+}
+
+.footer-opening {
+    color: #806b7c;
+    font-size: 11px;
+    margin-top: 35px;
+}
+
+/* HELLO KITTY FEITA COM CSS */
+
+.kitty {
+    width: 160px;
+    height: 145px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.kitty-head {
+    width: 130px;
+    height: 105px;
+    background: #fff;
+    border: 3px solid #f2dce9;
+    border-radius: 48% 48% 45% 45%;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    z-index: 2;
+}
+
+.ear {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 3px solid #f2dce9;
+    position: absolute;
+    top: -15px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.ear.left {
+    left: 3px;
+}
+
+.ear.right {
+    right: 3px;
+}
+
+.eye {
+    width: 9px;
+    height: 13px;
+    background: #25202a;
+    border-radius: 50%;
+    position: absolute;
+    top: 44px;
+}
+
+.left-eye {
+    left: 31px;
+}
+
+.right-eye {
+    right: 31px;
+}
+
+.nose {
+    width: 12px;
+    height: 9px;
+    background: #f5c64b;
+    border-radius: 50%;
+    position: absolute;
+    top: 59px;
+    left: 56px;
+}
+
+.whiskers {
+    position: absolute;
+    top: 57px;
+    width: 25px;
+    height: 2px;
+    background: #333;
+    box-shadow: 0 9px #333, 0 -9px #333;
+}
+
+.left-whiskers {
+    left: -13px;
+    transform: rotate(10deg);
+}
+
+.right-whiskers {
+    right: -13px;
+    transform: rotate(-10deg);
+}
+
+.bow {
+    width: 60px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    z-index: 4;
+}
+
+.bow span {
+    width: 28px;
+    height: 27px;
+    background: #ff75b8;
+    border: 2px solid #d94c91;
+    position: absolute;
+    border-radius: 8px 15px 8px 15px;
+}
+
+.bow span:first-child {
+    left: 0;
+    transform: rotate(25deg);
+}
+
+.bow span:nth-child(2) {
+    right: 0;
+    transform: rotate(-25deg);
+}
+
+.bow i {
+    width: 13px;
+    height: 13px;
+    background: #ffb0d6;
+    border: 2px solid #d94c91;
+    border-radius: 50%;
+    position: absolute;
+    left: 23px;
+    top: 10px;
+}
+
+/* CARTINHA */
+
+.letter-screen {
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
+    animation: appear 0.8s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.letter-card {
+    background: linear-gradient(145deg, #21131f, #140d16);
+    border: 1px solid #74405f;
+    border-radius: 20px;
+    padding: 35px 28px;
+    box-shadow: 0 0 45px #e65ca51c;
+    position: relative;
+    overflow: hidden;
+}
+
+.letter-card::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: #f47db9;
+    filter: blur(100px);
+    opacity: 0.10;
+    top: -70px;
+    right: -70px;
+}
+
+.letter-decoration {
+    color: #ff8bc4;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.letter-label {
+    color: #d99abb;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h2 {
+    color: #ff9bcf;
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 12px 0;
+}
+
+.divider {
+    color: #f47db9;
+    margin: 15px 0 25px;
+}
+
+.letter-content {
+    color: #e6d7e2;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: left;
+}
+
+.letter-content p {
+    margin-bottom: 17px;
+}
+
+.final-message {
+    color: #ff9bcf;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.letter-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #a77b99;
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+.letter-bottom span:first-child,
+.letter-bottom span:last-child {
+    color: #ff8bc4;
+    font-size: 17px;
+}
+
+.back-button {
+    margin-top: 22px;
+    padding: 10px 22px;
+    background: transparent;
+    border: 1px solid #8b5275;
+    border-radius: 25px;
+    color: #dba7c6;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #51263f;
+}
+
+/* CORAÇÕES FLUTUANTES */
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    color: #f47db9;
+    opacity: 0.35;
+    pointer-events: none;
+    animation: floatUp linear forwards;
+    z-index: -1;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* CELULAR */
+
+@media (max-width: 480px) {
+    .container {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .letter-card {
+        padding: 28px 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .letter-content {
+        font-size: 13px;
+    }
+}
