@@ -487,3 +487,18 @@ h2 {
         font-size: 10px;
     }
 }
+.music-button {
+    display: none;
+    margin: 15px auto;
+    padding: 12px 22px;
+    border: 1px solid #ff9bcf;
+    border-radius: 25px;
+    background: #51263f;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+}
+
+.music-button:hover {
+    background: #873d68;
+}
